@@ -260,16 +260,16 @@
         </div>
     </section>
 
-    <section id="map">
-    	<div style="width: 100%; overflow: hidden; height: 500px;">
+    <section id="map" style="height: 500px;">
+    	<!-- <div style="width: 100%; overflow: hidden; height: 500px;">
 		  <iframe 
 		     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.9414358510635!2d23.371229815731258!3d42.66259642393385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa867e3ebcda4f%3A0x8ec03473931dd6b6!2z0KLQtdGF0L3QvtC70L7Qs9C40YfQvdC-INCj0YfQuNC70LjRidC1INCV0LvQtdC60YLRgNC-0L3QvdC4INCh0LjRgdGC0LXQvNC4INCi0KPQldCh!5e0!3m2!1sbg!2sbg!4v1458931758529"
 		     width="100%"
 		     height="800"
 		     frameborder="0"
-		     style="border:0; margin-top: -150px;">
+		     style="border:0; margin-top: -150px;" class="map">
 		  </iframe>
-		</div>
+		</div> -->
     </section>
 
     <!-- Contact Section -->
@@ -510,6 +510,53 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9ZozKAVRBIKnLg81fvwcc1uhr5AJeU6o&callback=initMap"
+    async defer></script>
+
+    <script type="text/javascript">
+    	function initMap() {
+		  // Create a map object and specify the DOM element for display.
+		  var latLng = {lat: 42.6625686, lng: 23.373293}
+
+		  var map = new google.maps.Map(document.getElementById('map'), {
+		    center: latLng,
+		    scrollwheel: false,
+		    zoom: 16
+		  });
+		  
+		  // var marker = new google.maps.Marker({
+		  //   position: latLng,
+		  //   map: map,
+		  //   title: 'ТУЕС'
+		  // });
+		  var contentString = '<div id="content">'+
+		      '<div id="siteNotice">'+
+		      '</div>'+
+		      '<h3 id="firstHeading" class="firstHeading">ТУЕС</h3>'+
+		      '<div id="bodyContent">'+
+		      '<p>До училището се стига с автобуси 1, 3, 5,' +
+		      ' 8, 204, 213, 305, 306 и 604, тролеи 5 и 8 до спирка "МБАЛ Света Анна"' + 
+		      ', или с метролиния М1 до станция "Младост-1".</p>'+
+		      '</div>'+
+		      '</div>';
+
+		  var infowindow = new google.maps.InfoWindow({
+		    content: contentString
+		  });
+
+		  var marker = new google.maps.Marker({
+		    position: latLng,
+		    map: map
+		  });
+
+		  marker.addListener("click", function() {
+		  	infowindow.open(map, marker);	
+		  });
+		  infowindow.open(map, marker);
+		}
+    </script>
 
 </body>
 
