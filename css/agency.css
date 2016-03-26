@@ -185,8 +185,8 @@ fieldset[disabled] .btn-xl.active {
     color: #2980b9;
 }
 .navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: #fec503
+    color: #2980b9;
+    background-color: transparent;
 }
 @media (min-width: 768px) {
     .navbar-default {
