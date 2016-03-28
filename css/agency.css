@@ -368,7 +368,7 @@ section h3.section-subheading {
     position: absolute;
     content: "";
     width: 2px;
-    background-color: #f1f1f1;
+    background-color: #D4D4D4;
     left: 40px;
     margin-left: -1.5px
 }
@@ -414,7 +414,7 @@ section h3.section-subheading {
     background-color: #2980b9;
     color: #fff;
     border-radius: 100%;
-    border: 7px solid #f1f1f1;
+    border: 7px solid #D4D4D4;
     text-align: center
 }
 .timeline>li .timeline-image h4 {
