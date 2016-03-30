@@ -5,6 +5,11 @@ body {
 .text-muted {
     color: #777
 }
+
+#bs-example-navbar-collapse-1 li a {
+	font-weight: bold;
+}
+
 .text-primary {
     color: #2980b9
 }
