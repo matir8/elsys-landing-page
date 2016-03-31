@@ -24,3 +24,8 @@
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out
 }
+
+.portfolio-image {
+    width: 100%;
+    height: 100%;
+}
