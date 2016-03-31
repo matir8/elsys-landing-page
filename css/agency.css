@@ -147,8 +147,10 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff
 }
 .navbar-default {
-    background-color: #222;
-    border-color: transparent
+    background-image: url(../img/nav_background.png);
+    border-color: transparent;
+    background-color: transparent;
+    padding: 5px 0;
 }
 .navbar-default .navbar-brand {
     color: #2980b9;
@@ -212,8 +214,7 @@ fieldset[disabled] .btn-xl.active {
         border-radius: 3px
     }
     .navbar-default.navbar-shrink {
-        background-color: rgba(22, 22, 22, 0.7);
-        background-image: url(../img/header_background.png);
+        background-image: url(../img/nav_background.png);
         padding: 10px 0
     }
     .navbar-default.navbar-shrink .navbar-brand {
