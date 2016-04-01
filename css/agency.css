@@ -147,7 +147,7 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff
 }
 .navbar-default {
-    background-color: #222;
+    background-color: transparent;
     border-color: transparent
 }
 .navbar-default .navbar-brand {
@@ -162,6 +162,9 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default .navbar-collapse {
     border-color: rgba(255, 255, 255, .02)
+}
+.navbar-default.navbar-shrink {
+    background-image: url(../img/nav_background.png);
 }
 .navbar-default .navbar-toggle {
     background-color: #2980b9;
@@ -212,7 +215,6 @@ fieldset[disabled] .btn-xl.active {
         border-radius: 3px
     }
     .navbar-default.navbar-shrink {
-        background-image: url(../img/nav_background.png);
         padding: 10px 0
     }
     .navbar-default.navbar-shrink .navbar-brand {
