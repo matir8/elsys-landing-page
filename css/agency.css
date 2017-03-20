@@ -222,7 +222,7 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/tues.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/elsys.php);
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
